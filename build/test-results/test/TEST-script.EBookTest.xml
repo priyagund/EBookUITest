@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="script.EBookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-25T11:45:17" hostname="FH400" time="3.519">
+  <properties/>
+  <testcase name="searchBookByTitle" classname="script.EBookTest" time="3.519"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
