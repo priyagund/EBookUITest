@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="script.EBookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-25T11:45:17" hostname="FH400" time="3.519">
+<testsuite name="script.EBookTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-01-25T15:12:27" hostname="admin1-desktop" time="19.933">
   <properties/>
-  <testcase name="searchBookByTitle" classname="script.EBookTest" time="3.519"/>
+  <testcase name="givenMethodForSearchBook[0](The Girl In Room 105, null)" classname="script.EBookTest" time="4.167"/>
+  <testcase name="givenMethodForSearchBook[1](The Mist, null)" classname="script.EBookTest" time="4.093"/>
+  <testcase name="givenMethodForSearchBook[2](Indian SuperFoods, null)" classname="script.EBookTest" time="4.142"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 9424
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Jan 25, 2020 8:42:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 20463
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Jan 25, 2020 8:42:31 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 5985
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Jan 25, 2020 8:42:39 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
 </testsuite>
