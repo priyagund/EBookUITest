@@ -4,10 +4,9 @@ import base.Base;
 import base.JSONReader;
 import org.openqa.selenium.By;
 import org.testng.annotations.*;
-
 import java.io.IOException;
 
-public class EBookTest extends Base {
+public class searchBookTest extends Base {
 
     @DataProvider(name = "BookName")
     public Object[][] passData() throws IOException {
