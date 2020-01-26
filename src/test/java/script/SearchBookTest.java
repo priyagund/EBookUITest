@@ -4,13 +4,15 @@ import base.Base;
 import base.JSONReader;
 import org.openqa.selenium.By;
 import org.testng.annotations.*;
+import pages.SearchBook;
+
 import java.io.IOException;
 
-public class searchBookTest extends Base {
+public class SearchBookTest extends Base {
 
     @DataProvider(name = "BookName")
     public Object[][] passData() throws IOException {
-        return JSONReader.getdata(AutoConfig.FILEPATH,"BooksName", 3, 2);
+        return JSONReader.getdata(AutoConfig.FILEPATH,"BooksName", 3, 1);
     }
 
     @BeforeMethod
@@ -19,9 +21,9 @@ public class searchBookTest extends Base {
     }
 
     @Test(dataProvider = "BookName")
-    public void givenMethodForSearchBook(String BookName,String Price) throws InterruptedException {
-        driver.findElement(By.xpath("//input[@placeholder='Search…']")).sendKeys(BookName);
-        Thread.sleep(4000);
+    public void givenMethodForSearchBook(String BookName) throws InterruptedException {
+        SearchBook search=new SearchBook(driver);
+        search.searchBook(BookName);
     }
 
     @AfterMethod

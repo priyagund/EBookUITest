@@ -3,18 +3,20 @@ import base.Base;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import pages.SortBookByPriceHighToLow;
+import pages.AddToCart;
 
-public class SortBooKByPriceHighToLowTest extends Base {
+public class AddToCartTest extends Base {
     @BeforeMethod
     public void setUp() {
         initialization();
     }
 
     @Test
-    public void givenMethodForSortingBookByAscendingOrder() throws InterruptedException {
-            SortBookByPriceHighToLow check=new SortBookByPriceHighToLow(driver);
-            check.selectHighToLow();
+    public void givenMethodForBookAddIntoCartOrNot() throws InterruptedException {
+        AddToCart cart=new AddToCart(driver);
+        cart.setAddToBag();
+        cart.setAddToBag1();
+        cart.getCartButton();
     }
 
     @AfterMethod

@@ -8,21 +8,25 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-public class SortBookByPriceHighToLow extends Base {
+public class SortBookByPriceLowToHigh extends Base {
+
     @FindBy(xpath = "//select[@id='sortByDropDown']")
     WebElement dropdownList;
 
     @FindBy(xpath = "//select[@id='sortByDropDown']")
-    WebElement hightoLow;
+    WebElement lowToHigh;
 
-    public SortBookByPriceHighToLow(WebDriver driver) {
+
+    public SortBookByPriceLowToHigh(WebDriver driver) {
         PageFactory.initElements(driver,this);
     }
 
-    public void selectHighToLow() throws InterruptedException {
+    public void selectDropdownList(){
         dropdownList.click();
-        Select select=new Select(hightoLow);
-        select.selectByVisibleText("Price:hight to low");
+    }
+    public void selectLowToHigh() throws InterruptedException {
+        Select select=new Select(lowToHigh);
+        select.selectByVisibleText("Price:low to high");
         Thread.sleep(2000);
     }
 }
