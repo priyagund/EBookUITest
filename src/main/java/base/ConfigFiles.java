@@ -1,6 +1,6 @@
 package base;
 
-public interface AutoConfig {
+public interface ConfigFiles {
 
     String CONFIG_PATH = "/home/admin1/Documents/BookStoreUITest/src/test/resources/config.properties";
     String CHROME_KEY = "webdriver.chrome.driver";

@@ -51,51 +51,62 @@ public class PlaceOrder extends Base {
     }
 
 
-    public void setName(String customerName) {
+    public void setName(String customerName) throws InterruptedException {
         name.sendKeys(customerName);
+        Thread.sleep(2000);
     }
 
-    public void setEmail(String customerEmail) {
+    public void setEmail(String customerEmail) throws InterruptedException {
         email.sendKeys(customerEmail);
+        Thread.sleep(2000);
     }
-    public void setPhone(String setPhone){
+    public void setPhone(String setPhone) throws InterruptedException {
         phone.sendKeys(setPhone);
+        Thread.sleep(2000);
     }
 
     public void setCity(String cCity){
         city.sendKeys(cCity);
     }
 
-    public void setPincode(String customerPincode){
+    public void setPincode(String customerPincode) throws InterruptedException {
         pincode.sendKeys(customerPincode);
+        Thread.sleep(2000);
     }
 
-    public void setAddress(String customerAddress){
+    public void setAddress(String customerAddress) throws InterruptedException {
         address.sendKeys(customerAddress);
+        Thread.sleep(2000);
     }
 
-    public void setLandmark(String customerlandmark){
+    public void setLandmark(String customerlandmark) throws InterruptedException {
         landmark.sendKeys(customerlandmark);
+        Thread.sleep(2000);
     }
-    public void setOrderButton(){
+    public void setOrderButton() throws InterruptedException {
         orderButton.click();
+        Thread.sleep(2000);
     }
 
 
-    public void setContinueButton() {
+    public void setContinueButton() throws InterruptedException {
         contButton.click();
+        Thread.sleep(2000);
 
     }
 
-    public void setRadioButton(){
+    public void setRadioButton() throws InterruptedException {
         radioButton.click();
+        Thread.sleep(2000);
     }
 
-    public void setCheckOut(){
+    public void setCheckOut() throws InterruptedException {
         checkOutButton.click();
+        Thread.sleep(2000);
     }
 
-    public void setContShoppingButton(){
+    public void setContShoppingButton() throws InterruptedException {
         contButton.click();
+        Thread.sleep(2000);
     }
 }

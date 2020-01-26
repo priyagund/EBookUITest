@@ -2,12 +2,13 @@ package base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
 
 import java.util.concurrent.TimeUnit;
 
-public class Base implements AutoConfig{
+public class Base implements ConfigFiles {
 
-    public WebDriver driver;
+    public static WebDriver driver;
     static {
         System.setProperty(CHROME_KEY,CHROME_VALUE);
     }
@@ -22,6 +23,7 @@ public class Base implements AutoConfig{
         driver.manage().timeouts().implicitlyWait(timeoutPeriod, TimeUnit.SECONDS);
     }
 
+    @AfterMethod
     public void tearDown(){
         driver.close();
     }
